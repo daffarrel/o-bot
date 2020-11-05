@@ -26,12 +26,12 @@ kalo status bot nya udah berjalan, silahkan scan qr nya di aplikasi whatsapp
 ### Fitur 
 ketik !menu untuk menampilkan fitur
 
-| Fitur        | Status | Command | 
-| --------------- |:---------:|:---:|
-| Informasi Covid-19 | ✔️| !corona |
-| Seluruh surat Al-Qur'an | ✔️ | !quran|
-| Surat Al-Qur'an | ✔️ | !quran `nomor surat`|
-| Ayat Al-Qur'an | ✔️ | !quran `nomor ayat`|
+| Fitur        | Status | Command | Example |
+| --------------- |:---------:|:---:|:------------------:|
+| Informasi Covid-19 | ✔️ | !corona | !corona |
+| Seluruh surat Al-Qur'an | ✔️ | !quran | !quran
+| Surat Al-Qur'an | ✔️ | !quran `nomor surat` | !quran `1` |
+| Ayat Al-Qur'an | ✔️ | !quran `[nomor surat] [nomor ayat]` | !quran `1 1` |
 
 ### Perintah 
 
