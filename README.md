@@ -1,27 +1,38 @@
-### Install
+[![CodeFactor](https://www.codefactor.io/repository/github/liimalim/o-bot/badge)](https://www.codefactor.io/repository/github/liimalim/o-bot)
 
-Clone project ini
+# O-bot 
 
-```bash
-> git clone https://github.com/liimalim/whatsapp-bot
-> cd whatsapp-bot
+It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked.
 
-```
+**NOTE:** I can't guarantee you will not be blocked by using this method, although it has worked for me. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
+## Getting Started
 
-## Installation
-```bash
-> npm i
-```
 Please note that Node v10.18.1+ is required due to Puppeteer.
 
+### Install
+Clone this project
+
+```bash
+> git clone https://github.com/liimalim/o-bot.git
+> cd o-bot
+```
+
+Install the dependencies:
+
+```bash
+> npm install
+```
+
 ### Usage
-1. menjalankan bot
+1. run the Whatsapp bot
 
 ```bash
 > node index.js
 ```
 
-kalo status bot nya udah berjalan, silahkan scan qr nya di aplikasi whatsapp
+after running it you need to scan the qr
+
+---
 
 ### Fitur 
 ketik !menu untuk menampilkan fitur
