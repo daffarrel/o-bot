@@ -1,0 +1,25 @@
+{
+  "name": "o-bot",
+  "version": "1.0.0",
+  "description": "[![CodeFactor](https://www.codefactor.io/repository/github/liimalim/o-bot/badge)](https://www.codefactor.io/repository/github/liimalim/o-bot)",
+  "main": "index.js",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "request": "^2.88.2",
+    "whatsapp-web.js": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liimalim/o-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liimalim/o-bot/issues"
+  },
+  "homepage": "https://github.com/liimalim/o-bot#readme"
+}
