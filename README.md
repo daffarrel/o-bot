@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/liimalim/o-bot/badge)](https://www.codefactor.io/repository/github/liimalim/o-bot)
+[![CodeFactor](https://www.codefactor.io/repository/github/liimalim/o-bot/badge)](https://www.codefactor.io/repository/github/liimalim/o-bot) [![Depfu](https://badges.depfu.com/badges/7438088d6f569e58ee9807db06a1a8c8/overview.svg)](https://depfu.com/github/liimalim/o-bot?project_id=17608)
 
 # O-bot 
 
@@ -34,21 +34,29 @@ after running it you need to scan the qr
 
 ---
 
+### Premium
+
+[Deploy whatsapp bot on Heroku(free)](https://trakteer.id/liimalim/showcase/deploy-whatsapp-bot-ke-heroku-6IfFF "Deploy whatsapp bot on Heroku")
+
+---
+
 ### Fitur 
-ketik !menu untuk menampilkan fitur
+ketik /menu untuk menampilkan fitur
 
 | Fitur        | Status | Command | Example |
 | --------------- |:---------:|:---:|:------------------:|
-| Informasi Covid-19 | ✔️ | !corona | !corona |
-| Seluruh surat Al-Qur'an | ✔️ | !quran | !quran
-| Surat Al-Qur'an | ✔️ | !quran `nomor surat` | !quran `1` |
-| Ayat Al-Qur'an | ✔️ | !quran `[nomor surat] [nomor ayat]` | !quran `1 1` |
+| Informasi Covid-19 | ✔️ | /corona | /corona |
+| Seluruh surat Al-Qur'an | ✔️ | /quran | /quran |
+| Surat Al-Qur'an | ✔️ | /quran `nomor surat` | /quran `1` |
+| Ayat Al-Qur'an | ✔️ | /quran `[nomor surat] [nomor ayat]` | /quran `1 1` |
+| Informasi Group | ✔️ | /group info | /group info |
 
 ### Perintah 
 
 ## Command
 
-  - `!corona`: menampillkan informasi data Covid-19 di Indonesia
-  - `!quran`: menampilkan seluruh surat di dalam Al-Qur'an
-  - `!quran [nomor surat]`: menampilkan informasi surat di dalam Al-Qur'an
-  - `!quran [nomor ayat] [nomor ayat]`: menampilkan ayat Al-Qur'an
+  - `/corona`: menampillkan informasi data Covid-19 di Indonesia
+  - `/quran`: menampilkan seluruh surat di dalam Al-Qur'an
+  - `/quran [nomor surat]`: menampilkan informasi surat di dalam Al-Qur'an
+  - `/quran [nomor ayat] [nomor ayat]`: menampilkan ayat Al-Qur'an
+  - `/group info`: menampilkan informasi group

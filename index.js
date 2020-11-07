@@ -28,10 +28,26 @@ client.on('disconnected', (reason) => {
 	console.log('Client was logged out', reason);
 });
 client.on('message', async msg => {
+	var text;
 	const chat = await msg.getChat();
 	var msg_body = msg.body.toLowerCase();
 	switch(msg_body) {
-		case "!corona":
+		case "/menu":
+		text = `Menu BOT:
+
+INFORMATION
+└ /corona
+
+Al-Qur'an
+├ /quran
+├ /quran [nomor surat]
+└ /quran [nomor surat] [nomor ayat]
+
+GROUP
+└ /group_info`
+		client.sendMessage(msg.from, text)
+		break;
+		case "/corona":
 		request({
 			url: "https://api.alim.my.id/corona",
 		}, function(error, response, body) {
@@ -47,7 +63,7 @@ Sembuh: *${formatNumber(json.recovered)}*
 Last update ${json.last_update}`)
 		});
 		break;
-		case "!group info":
+		case "/group info":
 		var description = typeof chat.description !== 'undefined' ? chat.description : "Tidak ada deskripsi";
 		if (chat.isGroup) {
 			msg.reply(`*Group Details*
@@ -62,7 +78,7 @@ Participant count: ${chat.participants.length}`);
 		default:
 		var body_split = msg_body.split(" ")
 		switch(body_split[0]) {
-			case "!quran":
+			case "/quran":
 			var number_check = /^\d+$/;
 			if(typeof body_split[1] !== 'undefined'){
 				if (!number_check.test(body_split[1])) {
@@ -110,7 +126,6 @@ Keterangan: ${json.keterangan}
 				request({
 					url: "https://api.alim.my.id/quran/surat",
 				}, function(error, response, body) {
-					console.log(body)
 					var json = JSON.parse(body);
 					var surat = [];
 					surat.push("📖 *Seluruh surat di dalam Al-Qur'an* 📖")
